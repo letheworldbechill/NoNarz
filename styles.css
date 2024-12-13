@@ -1,0 +1,96 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7faff;
+    color: #000;
+}
+
+/* Header */
+header {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Hauptinhalt */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Sektionen */
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Unbewusste Reaktionen */
+#unwissend {
+    background-color: #ffcccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bewusste Reaktionen */
+#wissend {
+    background-color: #ccffcc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Buttons */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte */
+.reaction-text {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* Gleich groß für beide Sektionen */
+}

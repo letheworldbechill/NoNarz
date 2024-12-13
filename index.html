@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulative Taktiken erkennen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Manipulative Taktiken erkennen und bewusst reagieren</h1>
+    </header>
+    <main>
+        <div class="section-container">
+            <!-- Unbewusste Reaktionen -->
+            <section id="unwissend">
+                <h2>Unbewusste Reaktionen</h2>
+                <div class="button-container">
+                    <button onclick="showUnwissend(0)">Verunsicherung</button>
+                    <button onclick="showUnwissend(1)">Empathie</button>
+                    <button onclick="showUnwissend(2)">Kompromisse</button>
+                    <button onclick="showUnwissend(3)">Wutanfälle</button>
+                    <button onclick="showUnwissend(4)">Isolation</button>
+                </div>
+                <div id="unwissend-text" class="reaction-text"></div>
+            </section>
+
+            <!-- Bewusste Reaktionen -->
+            <section id="wissend">
+                <h2>Bewusste Reaktionen</h2>
+                <div class="button-container">
+                    <button onclick="showWissend(0)">Ruhe bewahren</button>
+                    <button onclick="showWissend(1)">Grenzen setzen</button>
+                    <button onclick="showWissend(2)">Fakten nutzen</button>
+                    <button onclick="showWissend(3)">Selbstfürsorge</button>
+                    <button onclick="showWissend(4)">Hilfe holen</button>
+                </div>
+                <div id="wissend-text" class="reaction-text"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Manipulative Taktiken erkennen. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then((registration) => {
+              console.log('Service Worker registered:', registration);
+            })
+            .catch((error) => {
+              console.log('Service Worker registration failed:', error);
+            });
+        }
+      </script>
+</body>
+</html>
